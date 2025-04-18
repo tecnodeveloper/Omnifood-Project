@@ -1,5 +1,42 @@
+/* 
+  --- 01 Typography System
+
+  - Font size (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Font weights 
+  Defualt 1
+
+  - Line height
+  Defualt 1 
+
+
+
+  --- 02 COLOR
+
+  primary color #e67e22
+  Tints:
+  Shades:
+  Accent:
+  #555
+
+  --- 03 Shadows
+
+  --- 04 Border-Radius
+
+  --- 05 Whitespaces
+  - Spacing System
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
 }
