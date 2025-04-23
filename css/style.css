@@ -74,7 +74,6 @@
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
-  margin-bottom: 9.6rem;
 }
 .hero-img {
   width: 100%;
@@ -115,6 +114,34 @@
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+/* ************************ */
+/* FEATURED In SECTION */
+/* ************************ */
+
+.section-featured {
+  padding: 4.8rem 0 3.8rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  /* As you go down from #999 to #000 the color will become darker */
+  color: #888;
+}
+.logos {
+  display: flex;
+  /* justify-content: space-betweem */
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
 }
 
 /* ************************ */
