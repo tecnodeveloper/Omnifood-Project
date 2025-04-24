@@ -31,6 +31,7 @@
   #fae5d3
  #eb984e
   #2e1907
+  #45260a
 
 
   Shades: #cf711f
@@ -58,6 +59,14 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* For Accessbilty when we press tab then bar will appear to be rounded we select every element then apply psuedo focus class on it and apply outline: none;   */
+*:focus {
+  outline: none;
+  /* outline: 4px solid #e67e22;
+  outline-offset: 8px; */
+  /* Trick for outline is using box shadow */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -89,8 +98,7 @@ body {
   margin-bottom: 0;
 } */
 
-.grid:not(:last-child)
-{
+.grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
 
@@ -142,17 +150,37 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
   font-weight: 600;
+
+  /* Only neccesary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 8px;
   /* Put transition on original state  We always use all other than background-color */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--left:link,
@@ -194,7 +222,6 @@ body {
   border-bottom: 1px solid transparent;
   color: #cf711f;
 }
-
 
 .list {
   list-style: none;

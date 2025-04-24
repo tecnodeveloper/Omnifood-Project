@@ -285,7 +285,6 @@
   font-size: 1.8rem;
 }
 
-
 /* ************************ */
 /* Testimonial SECTION */
 /* ************************ */
@@ -331,7 +330,7 @@
   padding: 1.6rem;
 }
 
-.gallery-item{
+.gallery-item {
   overflow: hidden;
 }
 
@@ -341,10 +340,9 @@
   transition: all 0.4s;
 }
 
-.gallery-item img:hover{
+.gallery-item img:hover {
   transform: scale(1.1);
 }
-
 
 /* ************************ */
 /* PRICING SECTION */
@@ -353,22 +351,22 @@
 .section-pricing {
   padding: 9.6rem 0;
 }
-.pricing-plan{
+.pricing-plan {
   width: 75%;
   border-radius: 11px;
 }
-.pricing-plan--starter{
+.pricing-plan--starter {
   justify-self: end;
   padding: 4.6rem;
   border: 2px solid #fdf2e9;
 }
-.pricing-plan--complete{
+.pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
-.pricing-plan--complete::after{
+.pricing-plan--complete::after {
   content: "Best value";
   color: #333;
   background-color: #ffd43b;
@@ -381,12 +379,12 @@
   right: -18%;
   transform: rotate(45deg);
 }
-.plan-header{
+.plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
 }
 
-.plan-name{
+.plan-name {
   color: #cf711f;
   font-weight: 600;
   font-size: 2rem;
@@ -394,30 +392,30 @@
   line-height: 0.75;
   margin-bottom: 3.2rem;
 }
-.plan-price{
+.plan-price {
   font-size: 6.2rem;
   font-weight: 600;
   color: #555;
   margin-bottom: 1.6rem;
 }
 
-.plan-price span{
+.plan-price span {
   font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
-.plan-text{
+.plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
 }
 
-.plan-sign-up{
+.plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
 }
 
-.plan-detail{
+.plan-detail {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
@@ -432,7 +430,7 @@
   padding: 1.6rem;
   border-radius: 50%;
 }
-.feature-title{
+.feature-title {
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
@@ -442,7 +440,6 @@
   font-size: 1.6rem;
   line-height: 1.8;
 }
-
 
 /* ************************ */
 /* CTA SECTION */
@@ -454,36 +451,40 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.20);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
   /* background-color: #e67e22; */
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  height: 50rem;
   overflow: hidden;
 }
-.cta-text-box{
+.cta-text-box {
   padding: 6.4rem;
   padding-top: 4.8rem;
   color: #45260a;
 }
-.cta .heading-secondary{
+.cta .heading-secondary {
   /* color: #45260a; */
   /* We can use inherit property to inherit property from parent. advantage is when the parent color is change then child also change */
   color: inherit;
   margin-bottom: 3.2rem;
 }
-.cta-text{
+.cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 4.8rem;
 }
-.cta-img-box{
-  background-image: linear-gradient(to right bottom, rgba(235,151, 78, 0.35), rgba(230, 125, 34, 0.35)), url('../img/eating.jpg');
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.cta-form{
+.cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4.2rem;
@@ -491,27 +492,28 @@
 }
 
 .cta-form label {
-display: block;
-font-size: 1.6rem;
-font-weight: 500;
-margin-bottom: 1.2rem;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
 }
 .cta-form input,
-.cta-form select  {
+.cta-form select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
   border: none;
   border-radius: 9px;
+  background-color: #fdf2e9;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-.cta-form input::placeholder{
+.cta-form input::placeholder {
   color: #aaa;
 }
-.cta-form select {
-  
-}
-.cta-form button {
-  
+
+.cta *:focus {
+  outline: none;
+  /* Trick for outline is using box shadow */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
