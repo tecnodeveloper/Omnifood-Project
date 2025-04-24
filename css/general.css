@@ -29,6 +29,8 @@
   #6f6f6f(Lightest grey allowed   #fdf2e9)
   #fdf2e9
   #fae5d3
+ #eb984e
+  #2e1907
 
 
   Shades: #cf711f
@@ -37,6 +39,9 @@
   #333
 
   --- 03 Shadows
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
 
   --- 04 Border-Radius
 Defualt 9px
