@@ -517,3 +517,11 @@
   /* Trick for outline is using box shadow */
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
+
+/* ************************ */
+/* FOOTER */
+/* ************************ */
+
+.footer {
+  padding: 9.6rem 0;
+}
