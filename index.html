@@ -418,6 +418,28 @@
             <h2 class="heading-secondary">Get your first meal for free</h2>
             <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You
               can cancel or pause anytime. And the first meal is on us!</p>
+            <!-- Instead of writing "Enter your name" in place holder write "John Smith" for best practice -->
+            <form action="#" class="cta-form">
+              <div>
+                <label for="full-name">Your name</label>
+                <input required id="full-name" type="text" placeholder="John Smith">
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input required id="email" type="email" placeholder="me@gmail.com">
+              </div>
+              <div>
+                <select required name="" id="select-where">
+                  <option value="">Please choose one option</option>
+                  <option value="friends">Friends and Family</option>
+                  <option value="youtube">YouTube Videos</option>
+                  <option value="facebook">Facebook ad</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="other">other</option>
+                </select>
+              </div>
+              <button>Sign up now</button>
+            </form>
           </div>
           <div class="cta-img-box" role="img" aria-label="Women enjoying food"></div>
         </div>
