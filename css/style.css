@@ -76,7 +76,6 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 
-
 .hero-img {
   width: 100%;
 }
@@ -532,32 +531,31 @@
   border: 1px solid #eee;
 }
 
-.grid--footer{
+.grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
-.footer-logo{
+.footer-logo {
   display: block;
   margin-bottom: 3.2rem;
 }
 
-.logo-col{
+.logo-col {
   display: flex;
   flex-direction: column;
-
 }
 
-.social-links{
+.social-links {
   list-style: none;
   display: flex;
   gap: 2.4rem;
 }
-.social-icon{
+.social-icon {
   height: 2.4rem;
   width: 2.4rem;
 }
 
-.copyright{
+.copyright {
   font-size: 1.4rem;
   line-height: 1.6;
   color: #767676;
@@ -569,12 +567,12 @@
   font-weight: 500;
   margin-bottom: 4rem;
 }
-.contracts{
+.contracts {
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-.address{
+.address {
   margin-bottom: 2.4rem;
 }
 .footer-nav {
@@ -584,30 +582,13 @@
   gap: 2.4rem;
 }
 .footer-link:link,
-.footer-link:visited{
+.footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color:   #767676;
+  color: #767676;
   transition: all 0.3s;
 }
 .footer-link:hover,
-.footer-link:active{
+.footer-link:active {
   color: #555;
-}
-
-
-
-@media (max-width: 1200px)
-{
-  .section-hero{
-    background-color: #51cf66;
-  }
-}
-
-@media (max-width: 600px)
-{
-  .section-hero{
-    background-color: rgb(214, 18, 18);
-    border: 30px solid black;
-  }
 }
