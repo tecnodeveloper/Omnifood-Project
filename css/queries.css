@@ -66,10 +66,13 @@
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
-  .hero-text-box,
-  .hero-img-box {
+  .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
   }
   .hero-img {
     width: 60%;
@@ -101,6 +104,64 @@
   }
   .btn--form {
     margin-top: 1.2rem;
+  }
+
+  /* Mobile Navigation */
+  .btn--mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ease-in ease-out attribute of transition property */
+    transition: all 0.5s ease-out;
+
+    /* Hide Navigation  */
+    /* Allows no transition at all */
+    /* display: none So we use opacity to 0*/
+
+    /* Make it visually */
+    opacity: 0;
+
+    /* Make it unaccessible for mouse and keyboard */
+    pointer-events: none;
+
+    /* Make it unaccessible for screen reader */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    /* Set back to normal visual, mouse-keyboard, screen reader */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.2rem;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 }
 
