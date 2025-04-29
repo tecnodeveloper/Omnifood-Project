@@ -15,7 +15,9 @@
   Defualt 1 
   Small 1.05
   Medium 1.2
+  large 1.4
   paragraph defualt 1.6
+
 
   - Line heights
   -0.5px
@@ -244,6 +246,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 /* Helper/Setting classes */
