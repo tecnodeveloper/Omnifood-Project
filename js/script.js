@@ -1,11 +1,12 @@
 // console.log("hello world");
-// const myname = 'Zain ali';
+const myname = 'Zain ali';
 // let annothervariable = 'New friend';
 // console.log('Hello ');
 // console.log(annothervariable);
 // console.log(myname);
 const h1 = document.querySelector(".heading-primary");
-console.log(h1)
+h1.textContent = myname;
+console.log(h1);
 
 
 
