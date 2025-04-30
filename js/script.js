@@ -1,15 +1,35 @@
-// console.log("hello world");
-const myname = 'Zain ali';
-// let annothervariable = 'New friend';
-// console.log('Hello ');
-// console.log(annothervariable);
-// console.log(myname);
+// Doing Basic Practice 
+console.log("hello world");
+const myname = "Zain Ali";
+let annothervariable = 'New friend';
+console.log('Hello ');
+console.log(annothervariable);
+console.log(myname);
+// const h1 = document.getElementsByClassName(".heading-primary");
 const h1 = document.querySelector(".heading-primary");
-h1.textContent = myname;
-console.log(h1);
+h1.addEventListener('click', function(){
+  h1.textContent = myname;
+  h1.style.backgroundColor = 'red';
+  h1.style.padding = '3rem';
+  console.log(h1);
+});
 
+///////////////////////////////////////////////////////////
+// Changing year of footer
+const yearEl = document.querySelector(".year");
+const currentyear = new Date().getFullYear();
+yearEl.textContent=currentyear;
+console.log(currentyear);
+///////////////////////////////////////////////////////////
+// Adding Mobile Navigation
+const MobilebtnEl = document.querySelector(".btn--mobile-nav");
+const headerEl = document.querySelector(".header");
 
+MobilebtnEl.addEventListener("click", function(){
+  headerEl.classList.toggle("nav-open");
+});
 
+///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

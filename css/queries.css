@@ -107,6 +107,11 @@
   }
 
   /* Mobile Navigation */
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+    /* For upper position we use z-index */
+    z-index: 9999;
+  }
   .btn--mobile-nav {
     display: block;
   }
@@ -164,16 +169,16 @@
     display: none;
   }
 
-/* ************************ */
-/* Below 704 (Smaller Tablets) */
-/* ************************ */
+  /* ************************ */
+  /* Below 704 (Smaller Tablets) */
+  /* ************************ */
 
-  @media (max-width: 44em)
-  {
-    .grid--3-cols, .grid--4-cols {
+  @media (max-width: 44em) {
+    .grid--3-cols,
+    .grid--4-cols {
       grid-template-columns: repeat(2, 1fr);
     }
-    .diet{
+    .diet {
       grid-column-start: 1;
       grid-column-end: -1;
       justify-self: center;
@@ -182,33 +187,32 @@
       margin-bottom: 4.8rem;
     }
   }
-  .pricing-plan{
-    width: 100% ;
+  .pricing-plan {
+    width: 100%;
   }
-  .grid--footer{
-    grid-template-columns: repeat(6,1fr);
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
   }
   .logo-col,
   .address-col {
     grid-column: span 3;
   }
-  .nav-col{
+  .nav-col {
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
   }
-/* ************************ */
-/* Below 544 (Mobiles) */
-/* ************************ */
+  /* ************************ */
+  /* Below 544 (Mobiles) */
+  /* ************************ */
 
-  @media (max-width: 34em)
-  {
+  @media (max-width: 34em) {
     .grid {
       row-gap: 4.8rem;
     }
     .grid--2-cols,
     .grid--3-cols,
-    .grid--4-cols{
+    .grid--4-cols {
       grid-template-columns: 1fr;
     }
     .btn,
@@ -216,47 +220,44 @@
     .btn:visited {
       padding: 2.4rem 1.6rem;
     }
-    .section-hero{
+    .section-hero {
       padding: 2.4rem 0 6.4rem 0;
     }
-    .hero{
+    .hero {
       padding: 0 3.2rem;
     }
-    .hero-img{
+    .hero-img {
       width: 80%;
     }
     .logos img {
       height: 1.2rem;
     }
-    .step-img-box:nth-child(2)
-    {
+    .step-img-box:nth-child(2) {
       grid-row: 1;
     }
-    .step-img-box:nth-child(6)
-    {
+    .step-img-box:nth-child(6) {
       grid-row: 5;
     }
-    .step-img-box{
+    .step-img-box {
       transform: translateY(2.4rem);
     }
-    .testimonials{
+    .testimonials {
       grid-template-columns: 1fr;
     }
-    .gallery{
+    .gallery {
       grid-template-columns: repeat(4, 1fr);
       gap: 1.2rem;
     }
-    .cta{
+    .cta {
       grid-template-columns: 1fr;
     }
-    .cta-text-box{
+    .cta-text-box {
       padding: 3.2rem;
     }
-    .cta-img-box{
+    .cta-img-box {
       height: 32rem;
       grid-row: 1;
     }
-
   }
 }
 
