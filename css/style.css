@@ -74,6 +74,17 @@
   color: #333;
 }
 
+/* Sticky Navigation */
+.stickyheader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.97);
+  z-index: 10000;
+}
+
+
 /* ************************ */
 /* Hero Section */
 /* ************************ */

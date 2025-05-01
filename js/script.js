@@ -61,6 +61,8 @@ MobilebtnEl.addEventListener("click", function(){
 // });
 
 
+
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
