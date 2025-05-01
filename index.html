@@ -459,17 +459,17 @@
                             first meal is on us!
                         </p>
                         <!-- Instead of writing "Enter your name" in place holder write "John Smith" for best practice -->
-                        <form action="#" class="cta-form">
+                        <form name="sign-up" netlify class="cta-form">
                             <div>
                                 <label for="full-name">Your name</label>
-                                <input required id="full-name" type="text" placeholder="John Smith" />
+                                <input required id="full-name" type="text" name="fullname" placeholder="John Smith" />
                             </div>
                             <div>
                                 <label for="email">Email address</label>
-                                <input required id="email" type="email" placeholder="me@gmail.com" />
+                                <input required id="email" type="email" placeholder="me@gmail.com" name="email" />
                             </div>
                             <div>
-                                <select required name="" id="select-where">
+                                <select required name="" id="select-where" name="select-where">
                                     <option value="">Please choose one option</option>
                                     <option value="friends">Friends and Family</option>
                                     <option value="youtube">YouTube Videos</option>
