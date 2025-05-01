@@ -60,7 +60,30 @@ MobilebtnEl.addEventListener("click", function(){
 
 // });
 
+///////////////////////////////////////////////////////////
+// Sticky Navigation
 
+const sectionHeroEl = document.querySelector(".section-hero");
+ 
+const obs = new IntersectionObserver(
+  function(entries){
+  const ent = entries[0];
+  console.log(ent);
+  if(ent.isIntersecting === false)
+    {
+    document.body.classList.add("sticky");
+  }  if(ent.isIntersecting === true)
+    {
+    document.body.classList.remove("sticky");
+  }
+}, {
+  // In the viewport
+  root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  }
+);
+obs.observe(sectionHeroEl);
 
 
 ///////////////////////////////////////////////////////////
@@ -99,7 +122,7 @@ checkFlexGap();
 }
 
 .no-flexbox-gap .delivered-faces {
-  margin-right: 1.6rem;
+ margin-right: 1.6sectionHeroElrem;
 }
 
 .no-flexbox-gap .meal-attribute:not(:last-child) {
