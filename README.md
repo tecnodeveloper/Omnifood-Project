@@ -2,4 +2,4 @@
 
 ## Live Preview
 
-https://omnifood-recluzedev.netlify.app/#attribute-lists
+<a href = "https://omnifood-recluzedev.netlify.app/" target = "_black"> Visit Omnifood project </a>
