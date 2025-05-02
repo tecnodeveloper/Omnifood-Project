@@ -2,4 +2,4 @@
 
 ## Live Preview
 
-https://omnifood-recluzedev.netlify.app/
+https://omnifood-recluzedev.netlify.app/#attribute-lists
